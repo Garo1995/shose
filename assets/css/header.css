@@ -1,0 +1,94 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 991;
+    transition: 0.3s;
+}
+.header-home{
+    padding: 20px 0 0;
+    transition: 0.3s;
+}
+.active .header-home{
+    display: none;
+}
+
+.header-standart{
+    background: #E0D3C5;
+    padding: 20px 0;
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 991;
+    transition: 0.3s;
+}
+.active .header-standart{
+    padding: 10px 0;
+    transform: translateY(0);
+}
+
+.header-standart .nav-menu a{
+    color: #737373;
+}
+
+
+.nav-menu{
+    gap: 40px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.has-submenu .submenu{
+    display: none;
+}
+.nav-menu a{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 120%;
+    color: #F9F9F9;
+}
+
+.header-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    transition: 0.3s;
+}
+
+.phone-number{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 120%;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.header-standart .phone-number{
+    color: #737373;
+}
+.active .header-phone {
+    gap: 10px;
+}
+.btn-order{
+    background: #88B89D;
+    width: max-content;
+    height: 42px;
+    gap: 10px;
+    padding: 11px 16px;
+    transition: 0.3s;
+    color: #F9F9F9;
+    font-weight: 550;
+    font-size: 17px;
+    line-height: 120%;
+}
+
+
+.header-all .header-standart{
+    transform: translateY(0);
+}

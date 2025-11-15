@@ -1,0 +1,223 @@
+.our-work-wrap{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+.our-work-box{
+    width: calc(33.333333% - 14px);
+}
+
+.brands-page{
+    margin-bottom: 60px;
+}
+.brands-page h2{
+    max-width: 660px;
+    width: 100%;
+}
+
+.brands-page-cnt{
+    margin-top: -56px;
+    padding: 0 75px;
+}
+.our-services h4{
+    margin-top: 40px;
+    color: #363636;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cost-by-photo {
+    background: #F0E9E1;
+
+}
+.cost-by-photo .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.cost-by-photo .image {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    height: 100%;
+    top: 0;
+}
+.cost-photo-cnt{
+    position: relative;
+    z-index: 2;
+}
+.cost-by-photo form {
+    width: 50%;
+    margin-top: 40px;
+    padding-right: 40px;
+}
+.cost-by-photo form p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.cost-by-photo form .agreement-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #949494;
+}
+.cost-by-photo form input[type=checkbox] {
+    margin-right: 5px;
+}
+
+
+.form-group{
+    margin-top: 24px;
+}
+
+form .form-group label {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #363636;
+}
+
+form .form-control {
+    border-radius: unset;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #363636;
+    border: 1px solid #CCBCAD;
+    padding-left: 25px;
+    max-width: 451px;
+    width: 100%;
+}
+form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(161 151 141 / 25%);
+}
+form .form-control.phone {
+    font-size: 26px;
+}
+form input[type=text], form input[type=file]{
+    height: 70px;
+}
+form textarea {
+    height: 113px;
+}
+.modal-footer {
+    display: block;
+}
+form .text-error {
+    color: red;
+    display: none;
+}
+form .required-notice {
+    font-size: 13px;
+    color: #737373;
+}
+form .add-foto {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 17px;
+    color: #363636;
+    background: url('../img/add-photo.svg') left center no-repeat;
+    height: 72px;
+    padding: 23px 0 0 96px;
+    font-weight: 400;
+    cursor: pointer;
+}
+form .add-foto-input {
+    position: absolute;
+    margin-top: -72px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.btn-send{
+    border: 1px solid #88B89D;
+    width: 100%;
+    max-width: 263px;
+    height: 60px;
+    gap: 10px;
+    padding: 20px 30px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: unset;
+    color: #88B89D;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.advantages-works{
+    padding: 50px 0 110px;
+}
+
+
+
+
+.price-page-title p{
+    margin-top: 30px;
+}
+
+.price-table {
+    padding-top: 60px;
+}
+.price-table h3{
+    color: #363636;
+    font-size: 38px;
+    line-height: 120%;
+    text-align: left;
+}
+.price-table .table {
+    margin-top: 30px;
+}
+.price-table .table th, .price-table .table td {
+    width: 50%;
+}
+
+
+.table thead th {
+    background: #C5B6A6;
+    font-family: 'Tenor Sans';
+    font-size: 28px;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    height: 73px;
+    vertical-align: middle;
+    padding-left: 32px;
+    text-align: left;
+}
+.table thead tr th:last-child {
+    border-left: 1px solid #fff;
+}
+.table td {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #737373;
+    vertical-align: middle;
+    border: none;
+    height: 64px;
+    padding-left: 32px;
+
+}
+.table tr td:last-child {
+    border-left: 1px solid #fff;
+}
+.table-striped tbody tr {
+    background: #E7DFD6;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F0E9E1;
+}

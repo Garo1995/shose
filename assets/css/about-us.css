@@ -1,0 +1,169 @@
+.reviews-about{
+    background: #F0E9E1;
+    padding: 50px 0 60px;
+}
+.reviews-about h2{
+    max-width: 520px;
+    width: 100%;
+}
+
+
+.block-about{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.block-about-pic{
+    width: 100%;
+    margin-top: 40px;
+}
+.block-about-pic img{
+    width: 100%;
+}
+
+.block-about-cnt{
+    margin: 40px 0;
+
+}
+.block-about-cnt h3{
+    color: #000000;
+    max-width: 495px;
+    width: 100%;
+    font-size: 23px;
+    line-height: 120%;
+    text-align: left;
+}
+
+.block-about-flex{
+    margin-top: 30px;
+    gap: 20px;
+}
+.block-about-info{
+    max-width: 545px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+.services-block{
+    background: url(../img/uslugi2-bg.jpg) center center repeat-y;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.services-block h2{
+    text-align: center;
+}
+.services-btn{
+    gap: 20px;
+}
+
+
+.services-wrap{
+    margin-top: 40px;
+    gap: 20px;
+}
+.services-boxes{
+    width: calc(33.333333% - 14px);
+}
+.services-modal{
+
+}
+
+
+
+.services-modal {
+    background: #F0E9E1;
+    height: 100%;
+    cursor: pointer;
+}
+.services-modal .image {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.services-modal .image:after{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #88B89D url('../img/uslugi2-str.svg') center center no-repeat;
+    bottom: 0;
+    right: 0;
+    transition: all .25s ease;
+}
+.services-modal:hover .image:after{
+    background: #79b091 url('../img/uslugi2-str.svg') center center no-repeat;
+}
+.services-modal .image img {
+    width: 100%;
+}
+.services-modal .text-wrap {
+    padding: 20px 20px;
+    position: relative;
+}
+.services-modal .title {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Tenor Sans';
+    color: #363636;
+    line-height: 1em;
+    margin-bottom: 10px;
+    min-height: 44px;
+}
+
+.services-modal .price {
+    font-size: 23px;
+    font-weight: 400;
+    color: #737373;
+}
+.services-modal .make-order {
+    position: absolute;
+    bottom: 20px;
+    right: 22px;
+    color: #88B89D;
+    font-size: 16px;
+    font-weight: 550;
+}
+.services-modal:hover .make-order{
+    text-decoration: underline;
+}
+
+
+
+.services-btn{
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.btn-green{
+    background: #88B89D;
+    width: max-content;
+    padding: 12px 26px;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 120%;
+    color: #F9F9F9;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.btn-white{
+    border: 2px solid #88B89D;
+    background: #FFFAF4;
+    width: max-content;
+    padding: 12px 26px;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 120%;
+    color: #88B89D;
+    transition: 0.3s;
+    white-space: nowrap;
+}

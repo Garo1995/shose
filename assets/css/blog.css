@@ -1,0 +1,129 @@
+.global-section{
+    margin-top: 168px;
+    padding-bottom: 60px;
+}
+.global-section h1{
+    color: #363636;
+}
+
+
+.blog-wrap{
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.blog-box{
+    width: calc(33.333333% - 14px);
+}
+
+
+
+.blog-item {
+    display: block;
+    background: #FFF7EE;
+    height: 100%;
+    position: relative;
+    outline: none;
+}
+.blog-item .date {
+    position: absolute;
+    width: 82px;
+    height: 32px;
+    background: #363636;
+    color: #FFFAF4;
+    font-size: 13px;
+    line-height: 31px;
+    text-align: center;
+    z-index: 2;
+}
+.blog-item .blog-photo {
+    width: 100%;
+    height: 200px;
+}
+
+.blog-item .title {
+    font-family: 'Tenor Sans';
+    font-size: 26px;
+    color: #363636;
+    padding: 30px 25px 0;
+    line-height: 1em;
+}
+.blog-item .short-text {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #5F5F5F;
+    padding: 20px 25px 35px;
+}
+
+.blog-item:hover{
+    text-decoration: none;
+}
+.blog-item:hover .title{
+    text-decoration: underline;
+}
+.blog-item:hover .more-str{
+    background: #79b091 url('../img/icons/blog-more-str.svg') center center no-repeat;
+}
+
+.blog-item .more-str {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    right: 0;
+    background: #88B89D url('../img/icons/blog-more-str.svg') center center no-repeat;
+    transition: all .25s ease;
+}
+
+
+
+
+.pagination-pages{
+    margin-top: 40px;
+    gap: 12px;
+}
+
+.pagination-left, .pagination-right{
+    transition: 0.3s;
+    width: 20px;
+    height: 20px;
+}
+.pag-arrow-left{
+    content: url("../img/icons/pag-arrow-left.svg");
+    transition: 0.3s;
+}
+.pag-arrow-right{
+    content: url("../img/icons/pag-arrow-right.svg");
+    transition: 0.3s;
+}
+.pagination-pages ul{
+    display: flex;
+}
+.pagination-pages ul li{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+.pagination-pages ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #363636;
+    font-family: "Tenor Sans";
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 120%;
+    text-align: center;
+}
+.pag-keter{
+    padding-bottom: 7px;
+    justify-content: center;
+}
+.pagination-pages ul li.pagination-active a{
+    background: #88B89D;
+    color: #F9F9F9;
+}
