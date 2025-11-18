@@ -47,12 +47,26 @@ header{
     display: none;
 }
 .nav-menu a{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 17px;
     line-height: 120%;
     color: #F9F9F9;
+    position: relative;
+    transition: 0.3s;
 }
-
+.nav-menu a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+    background: #88B89D;
+}
+.nav-menu a:hover:after{
+    width: 100%;
+}
 .header-phone{
     display: flex;
     flex-direction: column;
@@ -60,7 +74,6 @@ header{
     gap: 16px;
     transition: 0.3s;
 }
-
 .phone-number{
     color: #FFFFFF;
     font-weight: 500;
@@ -91,4 +104,179 @@ header{
 
 .header-all .header-standart{
     transform: translateY(0);
+}
+
+.mobile-menu{
+    display: none;
+}
+.open-menu{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+.body_fix {
+    overflow: hidden;
+}
+.body_fix:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
+    background: #00000099;
+
+}
+
+
+
+.close-menu-mob{
+    position: absolute;
+    top: 55px;
+    right: 45px;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+}
+.transition-menu .close-menu-mob{
+    opacity: 1;
+
+}
+.close-menu-mob span{
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    background: rgba(63, 91, 82, 1);
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+.close-menu-mob span:nth-child(1){
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -1px;
+    position: relative;
+}
+.close-menu-mob span:nth-child(2){
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -3px;
+}
+
+
+
+@media (max-width: 1020px){
+    .nav-menu{
+        display: none;
+    }
+
+    .header-main{
+        align-items: center;
+    }
+    .open-menu{
+        transition: 0.3s;
+        width: 35px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+    .open-menu span{
+        display: flex;
+        background: rgba(63, 91, 82, 1);
+        width: 100%;
+        height: 2px;
+        transition: 0.3s;
+    }
+    .open-menu span:nth-child(3) {
+        width: 20px;
+        margin-left: auto;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        transition: 0.7s;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        background: rgba(204, 188, 173, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .menu li a{
+        color: rgba(54, 54, 54, 1);
+        font-weight: 550;
+        font-size: 28px;
+        line-height: 120%;
+        text-align: center;
+    }
+    .transition-menu {
+        height: 100%;
+        -webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    .phone-number {
+        color: rgba(54, 54, 54, 1);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        transition: 0.3s;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .mobile-menu-soc{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .header-phone{
+        display: none;
+    }
+    .logo {
+        width: 135px;
+    }
+    .header-home {
+        padding: 16px 0 0;
+    }
+}
+@media (max-width: 575px){
+    .close-menu-mob {
+        top: 55px;
+        right: 20px;
+    }
+
+
+
+
 }

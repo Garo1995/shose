@@ -221,3 +221,132 @@ form .add-foto-input {
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F0E9E1;
 }
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .cost-by-photo .image {
+        left: auto;
+        right: 0;
+    }
+    .cost-by-photo .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: unset;
+    }
+
+}
+
+
+
+@media (max-width: 1299px){
+    .our-services h4 {
+        margin-top: 28px;
+        font-size: 30px;
+    }
+    .brands-page-cnt {
+        margin-top: -29px;
+        padding: 0 50px;
+    }
+    .cost-by-photo .image {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+    form .form-control.phone {
+        font-size: 22px;
+    }
+    form .form-control {
+        max-width: 351px;
+    }
+}
+
+
+
+@media (max-width: 1020px){
+    .our-work-box {
+        width: calc(50% - 14px);
+    }
+    .our-work-wrap {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .brands-page-cnt {
+        margin-top: 20px;
+        padding: 0 50px;
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .brands-slider{
+        width: 100%;
+    }
+
+    .our-services h4 {
+        margin-top: 23px;
+        font-size: 24px;
+    }
+    .price-table h3 {
+        font-size: 30px;
+    }
+    .table thead th {
+        font-size: 22px;
+        height: 60px;
+        padding-left: 23px;
+    }
+    .table td {
+        font-size: 16px;
+        line-height: 19px;
+        height: 58px;
+        padding-left: 23px;
+    }
+}
+
+@media (max-width: 767px){
+    .cost-by-photo .image{
+        display: none;
+    }
+    .cost-by-photo form {
+        width: 100%;
+        margin-top: 33px;
+        padding-right: 0;
+    }
+    .cost-by-photo form p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .price-table h3 {
+        font-size: 24px;
+    }
+
+    .price-table {
+        padding-top: 40px;
+    }
+    .table-scroll{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 15px;
+    }
+    .table-scroll table{
+        width: 700px;
+    }
+}
+@media (max-width: 570px){
+    .advantages-works {
+        padding: 40px 0 60px;
+    }
+    .our-work-box {
+        width: 100%;
+    }
+}

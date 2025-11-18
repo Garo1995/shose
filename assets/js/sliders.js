@@ -62,10 +62,61 @@ let reviewsSwiper = new Swiper(".reviews-slider", {
         nextEl: '.reviews-button-next',
         prevEl: '.reviews-button-prev',
     },
+    breakpoints: {
+        1020: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+        },
+        760: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+        },
+
+        570: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+        },
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+        },
+    },
 });
 
 let workshopsSwiper = new Swiper(".workshops-slider", {
     slidesPerView: 1,
+    allowTouchMove: false,
+    breakpoints: {
+        1020: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+        },
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+        },
+
+        570: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+            allowTouchMove: true,
+
+        },
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+            allowTouchMove: true,
+
+        },
+    },
     navigation: {
         nextEl: '.workshops-button-next',
         prevEl: '.workshops-button-prev',

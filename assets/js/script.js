@@ -1,3 +1,23 @@
+$(document).ready(function () {
+    $('.open-menu').on('click', function () {
+        $('.mobile-menu').toggleClass('transition-menu');
+        $('body').toggleClass('body_fix');
+    });
+    $('.close-menu-mob').on('click', function () {
+        $('body').removeClass('body_fix');
+        $('.mobile-menu').removeClass('transition-menu');
+    })
+    $('.menu a').on('click', function () {
+        $('body').removeClass('body_fix');
+        $('.mobile-menu').removeClass('transition-menu');
+    })
+});
+
+
+
+
+
+
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('header');

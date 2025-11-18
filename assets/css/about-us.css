@@ -167,3 +167,76 @@
     transition: 0.3s;
     white-space: nowrap;
 }
+
+
+@media (max-width: 1020px){
+    .services-boxes {
+        width: calc(50% - 14px);
+    }
+
+
+}
+@media (max-width: 767px){
+    .block-about-info {
+        max-width: 100%;
+        gap: 18px;
+    }
+    .block-about-flex{
+        flex-direction: column;
+    }
+    .block-about-pic {
+        width: 100%;
+        margin-top: 30px;
+        height: 300px;
+    }
+    .block-about-pic img{
+        object-fit: cover;
+        height: 100%;
+    }
+    .block-about-cnt h3 {
+        font-size: 20px;
+    }
+    .block-about-cnt {
+        margin: 30px 0;
+    }
+    .services-modal .price {
+        font-size: 20px;
+    }
+    .services-modal .make-order {
+        right: 20px;
+    }
+    .services-modal .text-wrap {
+        padding: 20px 16px;
+    }
+    .btn-white {
+        padding: 12px 26px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .btn-green {
+        padding: 13px 24px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .services-modal .title {
+        font-size: 20px;
+        min-height: 61px;
+    }
+}
+@media (max-width: 575px){
+    .services-block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .services-btn {
+        margin-top: 20px;
+        gap: 12px;
+        flex-direction: column;
+    }
+    .services-boxes {
+        width: 100%;
+    }
+    .services-modal .title {
+        font-size: 22px;
+    }
+}

@@ -60,7 +60,10 @@ p{
     top: 0;
     right: 0;
 }
-
+.banner-photo img{
+    width: 100%;
+    object-fit: cover;
+}
 .banner-info{
     position: relative;
     z-index: 1;
@@ -68,6 +71,9 @@ p{
     width: 100%;
 }
 
+.banner-info .btn{
+    display: none;
+}
 .banner-line{
     background: #F9F9F9;
     width: 200px;
@@ -244,6 +250,8 @@ p{
     font-size: 13px;
     line-height: 1.2em;
     bottom: 20px;
+    max-width: 386px;
+    width: 100%;
 }
 
 
@@ -266,7 +274,9 @@ p{
     outline: none;
     cursor: pointer;
 }
-
+.btn:hover{
+    background: #79b091;
+}
 
 
 
@@ -289,6 +299,9 @@ p{
     position: relative;
 }
 .our-services-box img{
+    width: 100%;
+}
+.our-services-box .img{
     width: 100%;
 }
 .our-services-box h3{
@@ -333,14 +346,14 @@ p{
 .shema-step {
     background: #C5B6A6;
     color: #fff;
-    padding: 20px 20px 30px 20px;
+    padding: 20px 18px 30px 20px;
     height: 100%;
     position: relative;
 }
 
 .shema-step .step-num {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background: #FFFAF4;
     bottom: 0;
     right: 0;
@@ -386,8 +399,8 @@ p{
 
 .shema-step .title-sm {
     display: block;
-    font-size: 24px;
-    line-height: 1.2em;
+    font-size: 20px;
+    line-height: 120%;
     font-family: 'Tenor Sans';
     height: 70px;
 }
@@ -395,10 +408,8 @@ p{
 
 
 .shema-step p{
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 140%;
     color: #F9F9F9;
+    margin-top: 5px;
 }
 
 
@@ -435,7 +446,9 @@ p{
     align-items: center;
 }
 
-
+.works-box{
+    position: relative;
+}
 
 .our-works-cnt .arrow-slid-btn {
     position: absolute;
@@ -611,7 +624,10 @@ p{
     margin-top: 110px;
     padding-bottom: 110px;
 }
-
+.workshops-main h2{
+    max-width: 900px;
+    width: 100%;
+}
 .workshops-cnt{
     margin-top: 40px;
 }
@@ -669,7 +685,9 @@ footer{
     max-width: 151px;
     width: 100%;
 }
-
+.footer-logo-mob{
+    display: none;
+}
 .footer-menu ul{
     display: flex;
     align-items: center;
@@ -682,8 +700,21 @@ footer{
     color: #BEBEBE;
     white-space: nowrap;
     transition: 0.3s;
+    position: relative;
 }
-
+.footer-menu a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+    background: #88B89D;
+}
+.footer-menu a:hover:after{
+    width: 100%;
+}
 .tel-number{
     color: #FFFFFF;
     font-weight: 500;
@@ -747,4 +778,472 @@ footer{
 .link-telegram{
     background: #0087CB;
 
+}
+
+
+
+
+
+@media (max-width: 1599px){
+    .banner-cnt {
+        position: unset;
+    }
+    .banner-photo {
+        margin-right: 0;
+    }
+    .container {
+        position: unset;
+    }
+}
+@media (max-width: 1399px){
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1299px){
+    .banner-photo {
+        max-width: 840px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 113%;
+    }
+    .banner-info {
+        max-width: 542px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .banner-cnt {
+        padding: 164px 0 135px;
+    }
+    h2 {
+        font-size: 56px;
+    }
+
+
+}
+@media (max-width: 1199px){
+    p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .about-us-info p + p {
+        margin-top: 19px;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .arrow-slid-btn {
+        margin-bottom: 29px;
+    }
+    .about-slider-text {
+        margin-left: 44px;
+        margin-right: 44px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .shema-img {
+        height: 118px;
+        width: 109px;
+        margin: 20px auto;
+    }
+    .shema-step {
+        padding: 16px 12px 30px 15px;
+    }
+    .works-box .label {
+        width: 138px;
+        height: 67px;
+        font-size: 22px;
+        line-height: 24px;
+        left: 0;
+    }
+    .review-item .text {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 14px;
+    }
+    .advantages-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advantages-box {
+        width: 31%;
+    }
+    .workshops-main h2 {
+        max-width: 620px;
+    }
+    .tel-number {
+        font-size: 20px;
+    }
+    .accept-payments {
+        margin-left: 0;
+        max-width: 395px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 50px;
+        height: 50px;
+    }
+    .banner-photo {
+        max-width: 770px;
+    }
+}
+@media (max-width: 1020px){
+    .container {
+        padding: 0 50px;
+    }
+    h1 {
+        font-size: 52px;
+    }
+    .banner-line {
+        width: 177px;
+        margin: 15px 0;
+    }
+    .banner-logo {
+        padding: 47px 46px;
+    }
+    .banner-logo .swiper-button-prev, .banner-logo .swiper-button-next{
+        display: none;
+    }
+    .banner-photo {
+        max-width: 83%;
+        margin-top: 123px;
+    }
+    .banner-cnt {
+        padding: 164px 0 156px;
+    }
+    .banner-logo .swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -20px;
+    }
+    .swiper-pagination-bullet {
+        display: inline-block;
+        border-radius: 50%;
+        background: rgba(128, 128, 128, 0.2);
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: rgba(136, 184, 157, 1);
+    }
+    h4 {
+        font-size: 24px;
+    }
+    .about-us-flex {
+        gap: 24px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-info {
+        max-width: 100%;
+    }
+    .about-us-func {
+        max-width: 545px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .arrow-slid-btn {
+        margin: 30px auto 0;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    .about-us-sec {
+        padding-bottom: 40px;
+    }
+    .our-services {
+        margin-top: 30px;
+        padding: 40px 0 40px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .our-services-box h3 {
+        max-width: 240px;
+        top: 30px;
+    }
+    .video-box-flex {
+        margin-top: 30px;
+    }
+
+    .how-work-flex {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-work-box {
+        width: 100%;
+    }
+
+    .shema-step:not(.last):after{
+        display: none;
+    }
+    .shema-step:not(.first):before{
+        display: none;
+    }
+    .shema-img {
+        height: 106px;
+        width: 94px;
+        margin: 0;
+    }
+    .how-work-min {
+        margin-top: 70px;
+    }
+    .shema-step {
+        padding: 24px 24px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .shema-step .title-sm {
+        font-size: 24px;
+        height: auto;
+        max-width: 226px;
+        width: 100%;
+    }
+    .works-cnt {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .our-works-cnt {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .works-slider{
+        width: 100%;
+    }
+    .our-works-cnt .arrow-slid-btn {
+        position: relative;
+        margin-bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    .works-box .label {
+        width: 156px;
+        height: 81px;
+    }
+    .reviews-cnt {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .reviews-slider{
+        width: 100%;
+    }
+
+    .reviews-min {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .advantages-main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .advantages-box {
+        width: calc(50% - 10px);
+    }
+    .advantages-flex {
+        margin-top: 30px;
+    }
+    .workshops-main {
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
+    .workshops-slider .swiper-wrapper {
+        flex-direction: unset;
+        gap: 0;
+    }
+    .workshops-box {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .workshops-cnt .arrow-slid-btn {
+        display: flex;
+    }
+    .workshops-info {
+        max-width: 100%;
+    }
+    .workshops-info p {
+        margin-top: 18px;
+    }
+    .workshops-photo {
+        max-width: 100%;
+    }
+    .footer-main{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
+    .footer-menu ul {
+        flex-direction: column;
+    }
+    .footer-menu a {
+        font-size: 28px;
+    }
+    .tel-number {
+        font-size: 24px;
+    }
+    .footer-cnt {
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+    .copy-site {
+        align-items: center;
+    }
+    .copy-site p {
+        text-align: center;
+    }
+    .footer-logo-desc{
+        display: none;
+    }
+    .footer-logo-mob{
+        display: block;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .container {
+        padding: 0 16px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .banner-logo {
+        padding: 32px 40px;
+    }
+    .banner-info {
+        max-width: 405px;
+    }
+    .banner-photo {
+        max-width: 83%;
+        margin-top: 123px;
+        height: 440px;
+    }
+    .brands-main {
+        margin-top: -60px;
+    }
+
+    .banner-info .btn{
+        display: flex;
+        margin: 20px 0 0;
+        width: 240px;
+    }
+    .banner-cnt {
+        padding: 140px 0 105px;
+    }
+    .our-services-flex {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .video-box-flex {
+        flex-direction: column;
+    }
+    .video-section {
+        margin-top: 40px;
+    }
+    .workshops-main {
+        margin-top: 40px;
+        padding-bottom: 50px;
+    }
+    .workshops-cnt {
+        margin-top: 30px;
+    }
+
+    .workshops-slider .swiper-slide:nth-child(even) .workshops-box {
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+@media (max-width: 575px){
+    h1 {
+        font-size: 42px;
+    }
+    .banner-photo {
+        max-width: 80%;
+        margin-top: 118px;
+        height: 432px;
+    }
+    .about-us-sec {
+        padding-top: 70px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .about-us-info h2 {
+        margin-bottom: 24px;
+    }
+
+    .about-slider-text {
+        margin-left: 17px;
+        margin-right: 10px;
+        max-width: 89%;
+    }
+    .compare {
+        height: auto;
+    }
+    .shema-step .title-sm {
+        max-width: 282px;
+    }
+    .works-box .label {
+        width: 95px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .advantages-box {
+        width: 100%;
+    }
+    .workshops-info h4 {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    .workshops-photo img {
+        height: 260px;
+    }
+    .payments-flex {
+        margin-top: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .payments-logo {
+        width: 38%;
+        justify-content: center;
+    }
+    .payments-logo:nth-child(2){
+        order: 3;
+    }
+    .payments-logo:nth-child(3){
+        order: 2;
+    }
+    .payments-logo:nth-child(4){
+        order: 4;
+    }
 }
