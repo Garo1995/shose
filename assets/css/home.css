@@ -243,10 +243,10 @@ p{
     z-index: 10;
     margin-left: 80px;
     margin-right: 80px;
-    background: gray;
+    background: rgba(128, 128, 128, 0.6);
+
     padding: 5px 20px;
-    color: #fff;
-    opacity: 0.6;
+    color: rgba(249, 249, 249, 1);
     font-size: 13px;
     line-height: 1.2em;
     bottom: 20px;
@@ -256,6 +256,7 @@ p{
 
 
 .btn{
+    font-family: 'HelveticaNeueCyr';
 
     background: #88B89D;
     font-size: 21px;
@@ -330,7 +331,7 @@ p{
 
 
 .how-work-min{
-    margin-top: 110px;
+    margin-top: 60px;
 }
 .how-work-flex{
     margin-top: 40px;
@@ -441,9 +442,7 @@ p{
     position: absolute;
     left: 15px;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 
 .works-box{
@@ -894,9 +893,7 @@ footer{
         width: 50px;
         height: 50px;
     }
-    .banner-photo {
-        max-width: 770px;
-    }
+
 }
 @media (max-width: 1020px){
     .container {

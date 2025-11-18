@@ -96,12 +96,6 @@ let workshopsSwiper = new Swiper(".workshops-slider", {
             slidesPerGroup: 1,
             spaceBetween: 30,
         },
-        767: {
-            slidesPerView: 2,
-            slidesPerGroup: 1,
-            spaceBetween: 20,
-        },
-
         570: {
             slidesPerView: 1,
             slidesPerGroup: 1,

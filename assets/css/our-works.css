@@ -159,7 +159,7 @@ form .add-foto-input {
 }
 
 .advantages-works{
-    padding: 50px 0 110px;
+    padding: 50px 0 60px;
 }
 
 
@@ -314,8 +314,18 @@ form .add-foto-input {
 }
 
 @media (max-width: 767px){
-    .cost-by-photo .image{
-        display: none;
+    .cost-by-photo .container {
+        padding-top: 0;
+    }
+    .cost-by-photo .image {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    .cost-photo-cnt {
+        position: relative;
+        z-index: 2;
+        margin-top: 20px;
     }
     .cost-by-photo form {
         width: 100%;

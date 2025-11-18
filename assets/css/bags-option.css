@@ -1,0 +1,246 @@
+
+
+
+.bags-opt-about .about-us-info h2 {
+    line-height: 89%;
+}
+
+.price-table-sec{
+    padding-bottom: 60px;
+}
+
+.restoration-min{
+    background-image: url("../img/fone-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 60px;
+}
+.restoration-info{
+    max-width: 824px;
+    width: 100%;
+    padding: 60px 0;
+}
+
+
+.restoration-photo{
+    position: absolute;
+    top: 0;
+    right: -205px;
+    max-width: 443px;
+    width: 100%;
+    height: 100%;
+}
+
+.restoration-info h4{
+    font-size: 38px;
+    line-height: 120%;
+    color: rgba(54, 54, 54, 1);
+}
+.restoration-info p{
+    margin-top: 24px;
+}
+.restoration-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+.restoration-text h4{
+    max-width: 246px;
+    width: 100%;
+}
+.restoration-ul{
+    gap: 20px;
+    margin-top: 60px;
+}
+.restoration-ul ul{
+    max-width: 262px;
+    width: 100%;
+    list-style-type: disc;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.restoration-ul ul li{
+    color: rgba(115, 115, 115, 1);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 120%;
+}
+
+
+.briefcase-repair{
+    background: rgba(240, 233, 225, 1);
+    padding: 50px 0 60px;
+}
+
+
+.briefcase-repair-block{
+    margin-top: 60px;
+}
+.briefcase-repair-block h3{
+    color: rgba(54, 54, 54, 1);
+    font-size: 38px;
+    line-height: 120%;
+    text-align: left;
+}
+.briefcase-repair-scr{
+    margin-top: 40px;
+
+}
+.briefcase-scr-width{
+    display: flex;
+    gap: 20px;
+}
+.briefcase-repair-photo{
+    width: 100%;
+}
+.briefcase-repair-photo img{
+    width: 100%;
+}
+
+.briefcase-repair-text{
+    padding: 0 20px;
+    margin-top: 40px;
+    gap: 24px;
+}
+.briefcase-repair-check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.briefcase-repair-check p{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    color: rgba(115, 115, 115, 1);
+}
+.icons-check-fill{
+    content: url("../img/icons/icons-check-fill.svg");
+}
+
+.restoration-min .container{
+    position: relative;
+}
+
+.how-work-bags {
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 1599px){
+    .restoration-photo {
+        right: -105px;
+        max-width: 400px;
+    }
+    .restoration-info {
+        max-width: 800px;
+        padding: 40px 0;
+    }
+
+}
+
+
+@media (max-width: 1399px){
+    .restoration-photo {
+        right: -27px;
+        max-width: 404px;
+    }
+    .restoration-info {
+        max-width: 737px;
+        padding: 30px 0;
+    }
+    .restoration-info h4 {
+        font-size: 30px;
+    }
+
+    .restoration-text {
+        margin-top: 24px;
+        gap: 20px;
+    }
+    .restoration-ul {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 1199px){
+    .restoration-photo{
+        display: none;
+    }
+
+}
+@media (max-width: 1020px){
+    .restoration-text {
+        margin-top: 24px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .briefcase-repair-check p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .briefcase-repair-block {
+        margin-top: 48px;
+        margin-right: -50px;
+    }
+
+    .briefcase-repair-text {
+        padding: 0;
+        margin-top: 20px;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .briefcase-repair-scr {
+        margin-top: 28px;
+        overflow-x: auto;
+        width: 100%;
+        padding-right: 50px;
+    }
+    .briefcase-scr-width{
+        width: 880px;
+    }
+    .briefcase-repair-scr::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .briefcase-repair-scr::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+    .services-modal .title {
+        font-size: 20px;
+    }
+    .services-modal .price {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px){
+    .briefcase-repair-scr {
+        padding-right: 16px;
+    }
+    .briefcase-repair-block {
+        margin-right: -16px;
+    }
+    .restoration-ul {
+        gap: 8px;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .restoration-info h4 {
+        font-size: 22px;
+    }
+    .restoration-info p {
+        margin-top: 16px;
+    }
+    .bags-option-photo {
+        height: 391px;
+    }
+
+}

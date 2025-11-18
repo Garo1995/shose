@@ -44,12 +44,12 @@ $(function(){
 
 
 function compareSliderInit(){
-    var enableCompareDrug = false;
+    let enableCompareDrug = false;
     $('.compare').mousedown(function() {
         enableCompareDrug = true;
     });
     $('.compare').mousemove(function(e){
-        var offsetLeft = e.clientX - $(this).offset().left;
+        let offsetLeft = e.clientX - $(this).offset().left;
         if(enableCompareDrug && offsetLeft > 15 && offsetLeft < 525){
             $('.move-do').width(offsetLeft);
         }
@@ -61,13 +61,13 @@ function compareSliderInit(){
 }
 
 function compareSliderMobileInit(){
-    var enableCompareDrug = false;
+    let enableCompareDrug = false;
     $('.compare').on('touchstart', function(){
         enableCompareDrug = true;
     });
     $('.compare').on('touchmove', function(e){
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        var offsetLeft = touch.pageX - $(this).offset().left;
+        let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        let offsetLeft = touch.pageX - $(this).offset().left;
         if(enableCompareDrug && offsetLeft > 15 && offsetLeft < 525){
             $('.move-do').width(offsetLeft);
         }
@@ -77,4 +77,58 @@ function compareSliderMobileInit(){
         $('.move-do').animate({'width': '50%'}, 300);
     });
 }
+
+
+
+
+
+
+
+
+
+
+$('.open_modal').on('click', function () {
+    let attr = $(this).attr('data-val');
+    let modal = $('#' + attr);
+    modal.removeClass('out');
+    modal.fadeIn();
+    $('body').addClass('body-modal_fixed');
+});
+
+$('.close').on('click', function () {
+
+    $('body').removeClass('body-modal_fixed');
+    let prt = $(this).parents('.modal');
+
+    prt.addClass('out')
+    setTimeout(function () {
+        prt.fadeOut();
+    }, 100);
+});
+
+$(window).on('click', function (event) {
+
+
+    $('.modal').each(function () {
+        let gtattr = $(this).attr('id');
+        let new_mod = $('#' + gtattr);
+        let md_cnt = $(new_mod).find('.modal-content');
+        if (event.target === $(md_cnt)[0]) {
+            setTimeout(function () {
+                $(new_mod).addClass('out');
+                $(new_mod).fadeOut()
+            }, 100)
+            $('body').removeClass('body-modal_fixed');
+        }
+        if (event.target === this) {
+            setTimeout(function () {
+                $(new_mod).addClass('out');
+                $(new_mod).fadeOut()
+            }, 100)
+        }
+    })
+});
+
+
+
 

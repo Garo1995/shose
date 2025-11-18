@@ -1,4 +1,4 @@
-header{
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,12 +96,16 @@ header{
     padding: 11px 16px;
     transition: 0.3s;
     color: #F9F9F9;
-    font-weight: 550;
+    font-weight: 400;
     font-size: 17px;
     line-height: 120%;
+    font-family: 'HelveticaNeueCyr';
+
 }
 
-
+.btn-order:hover{
+    background: #79b091;
+}
 .header-all .header-standart{
     transform: translateY(0);
 }
@@ -126,12 +130,13 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 11;
+    z-index: 991;
     transition: 0.3s;
     backdrop-filter: blur(6px);
     background: #00000099;
 
 }
+
 
 
 
