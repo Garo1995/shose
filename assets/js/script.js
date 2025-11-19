@@ -7,14 +7,15 @@ $(document).ready(function () {
         $('body').removeClass('body_fix');
         $('.mobile-menu').removeClass('transition-menu');
     })
-    $('.menu a').on('click', function () {
-        $('body').removeClass('body_fix');
-        $('.mobile-menu').removeClass('transition-menu');
-    })
+
+
+
 });
 
 
-
+$('.submenu li').on('click', function () {
+    $(this).toggleClass('submenu-opened');
+})
 
 
 
@@ -80,6 +81,22 @@ function compareSliderMobileInit(){
 
 
 
+
+$('.menu .has-submenu>a').click(function(e){
+    var submenu = $(this).parent().find('.submenu');
+    if($(submenu).css('display') == 'block'){
+        $(submenu).hide();
+    } else {
+        $(submenu).show();
+    }
+    e.stopPropagation();
+    return false;
+});
+
+$(window).click(function() {
+    $('.submenu').hide();
+    $('.lang').removeClass('active');
+});
 
 
 

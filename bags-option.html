@@ -37,7 +37,7 @@
                     </ul>
                     <div class="header-phone">
                         <a href="tel:+7 (499) 777-45-19" class="phone-number">+7 (499) 777-45-19</a>
-                        <button class="btn-order" data-target="#orderModal">Оставить заявку</button>
+                        <button data-val="modal-form" class="open_modal btn-order" data-target="#orderModal">Оставить заявку</button>
                     </div>
                 </div>
                 <div class="open-menu">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="header-phone">
                     <a href="tel:+7 (499) 777-45-19" class="phone-number">+7 (499) 777-45-19</a>
-                    <button class="btn-order" data-target="#orderModal">Оставить заявку</button>
+                    <button data-val="modal-form" class="open_modal btn-order" data-target="#orderModal">Оставить заявку</button>
                 </div>
                 <div class="open-menu">
                     <span></span>
@@ -83,7 +83,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="mobile-menu">
         <div class="close-menu-mob">
@@ -457,169 +456,6 @@
     </div>
 </section>
 
-
-
-<section class="price-table-sec">
-    <div class="container">
-        <div class="price-table">
-            <h2>Цены на ремонт сумок</h2>
-            <div class="table-scroll">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Услуга</th>
-                        <th>Цена</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Замена ручки на сумке</td>
-                        <td>От 2 300 р.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Замена молнии на сумке (YKK)</td>
-                        <td>1 800 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Замена молнии на сумке (riri)</td>
-                        <td>2 800 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Замена подкладки в сумке</td>
-                        <td>от 2 800 р.</td>
-                    </tr>
-
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section id="cost-by-photo" class="cost-by-photo">
-    <div class="container">
-        <img class="image" src="./assets/img/cost-by-photo-sumki.jpg" alt="sumki">
-        <div class="cost-photo-cnt">
-            <h2>Оценим стоимость<br> по фотографии</h2>
-            <form id="costForm" enctype="multipart/form-data">
-                <p>Прикрепите фотографию и мы свяжемся<br>с Вами в ближайшее время</p>
-
-                <div class="form-group">
-                    <input type="text" name="phone" class="form-control phone phone_mask" placeholder="+7 (___)___-__-__">
-                    <small class="form-text text-error">!Не указан Ваш телефон</small>
-                </div>
-
-                <div class="form-group custom-file2">
-                    <div class="add-foto">Добавить фото изделия</div>
-                    <input type="file" name="photo" class="form-control add-foto-input">
-                    <small class="form-text text-error">!Выберите фото изделия</small>
-                </div>
-                <div class="form-group">
-                    <label class="agreement-text"><input type="checkbox">
-                        Я согласен(-на) с обработкой моих персональных данных в соответствии с политикой конфиденциальности
-                    </label>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn-send" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Otsenim stoimost po foto'});">Отправить</button>
-                    <div class="msg"></div>
-                </div>
-            </form>
-        </div>
-
-    </div>
-</section>
-
-
-
-<section id="shema" class="how-work-min">
-    <div class="container">
-        <h2>Как мы работаем</h2>
-        <div class="how-work-flex G-justify-between">
-            <div class="how-work-box">
-                <div class="shema-step first">
-                    <span class="step-num">1</span>
-                    <div class="shema-img G-flex">
-                        <img src="./assets/img/icons/deliver-icons.svg" alt="deliver">
-                    </div>
-                    <span class="title-sm">Оставьте заявку</span>
-                    <p>Заполните форму или оставьте свой номер телефона на сайте и мы перезвоним Вам в ближайшее время.</p>
-                </div>
-            </div>
-            <div class="how-work-box">
-                <div class="shema-step ">
-                    <span class="step-num">2</span>
-                    <div class="shema-img G-flex">
-                        <img src="./assets/img/icons/deliver-icons-2.svg" alt="deliver">
-                    </div>
-                    <span class="title-sm">Выберите мастерскую <br> или курьера</span>
-                    <p>Вы можете выбрать ближайший адрес из 7 мастерских или вызвать к вам курьера. </p>
-                </div>
-            </div>
-            <div class="how-work-box">
-                <div class="shema-step ">
-                    <span class="step-num">3</span>
-                    <div class="shema-img G-flex">
-                        <img src="./assets/img/icons/deliver-icons-3.svg" alt="deliver">
-                    </div>
-                    <span class="title-sm">Мы реставрируем вещи</span>
-                    <p>Наши мастера произведут ремонт или необходимые процедуры с Вашими вещами.</p>
-                </div>
-            </div>
-            <div class="how-work-box">
-                <div class="shema-step last">
-                    <span class="step-num">4</span>
-                    <div class="shema-img G-flex">
-                        <img src="./assets/img/icons/deliver-icons-4.svg" alt="deliver">
-
-                    </div>
-                    <span class="title-sm">Выдача или доставка заказа</span>
-                    <p>Выдадим в срок ваш заказ в одном из филиалов или доставим к вам курьером.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="restoration-min">
-    <div class="container">
-        <div class="restoration-info">
-            <h4>Профессиональный ремонт и реставрация
-                брендовых сумок в Москве</h4>
-            <p>
-                Когда на Вашей брендовой сумке, клатче или рюкзаке вдруг обнаруживается царапина, прорывается подкладка, ломается молния или рвётся ручка — это очень неприятно. Но всегда всё можно исправить. Наши мастера устранят повреждения на Вашем любимом аксессуаре. Благодаря их опыту и профессиональному оборудованию ваши вещи будут выглядеть как новые.
-            </p>
-            <div class="restoration-text">
-                <h4>Нас находят
-                    по запросам:</h4>
-                <div class="restoration-ul G-align-start">
-                    <ul>
-                        <li>Реставрация брендовых сумок</li>
-                        <li>Ремонт элитных сумок</li>
-                        <li>Ремонт брендовых сумок</li>
-                    </ul>
-                    <ul>
-                        <li>Ремонт сумок
-                        </li>
-                        <li>Реставрация кожаных сумок</li>
-                    </ul>
-                </div>
-            </div>
-            <p>
-                Компания «Bruno Master» предлагает самый качественный ремонт сумок в Киеве и Украине. Наши специалисты готовы взяться за решение любых задач. Они обладают высоким мастерством и опытом, используют лучшие комплектующие, современное оборудование и инструментарий.
-            </p>
-        </div>
-        <div class="restoration-photo G-flex">
-            <img src="./assets/img/restoration.jpg" alt="restoration">
-        </div>
-    </div>
-</section>
-
-
 <section id="advantages" class="advantages-works">
     <div class="container">
         <h2>Наши преимущества</h2>
@@ -716,17 +552,30 @@
         <div class="briefcase-repair-block">
             <h3>Ремонт кожаного портфеля</h3>
             <div class="briefcase-repair-scr">
-               <div class="briefcase-scr-width">
-                   <div class="briefcase-repair-photo G-flex">
-                       <img src="./assets/img/bags-1.jpg" alt="bags">
-                   </div>
-                   <div class="briefcase-repair-photo G-flex">
-                       <img src="./assets/img/bags-2.jpg" alt="bags">
-                   </div>
-                   <div class="briefcase-repair-photo G-flex">
-                       <img src="./assets/img/bags-3.jpg" alt="bags">
-                   </div>
-               </div>
+                <div class="briefcase-arrow G-align-center">
+                    <div class="briefcase-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                    <div class="briefcase-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                </div>
+                <div class="briefcase-repair-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-1.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-2.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-3.jpg" alt="bags">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="briefcase-repair-text G-align-center">
                 <div class="briefcase-repair-check">
@@ -747,17 +596,40 @@
         <div class="briefcase-repair-block">
             <h3>Реставрация сумки Louis Vuitton</h3>
             <div class="briefcase-repair-scr">
-                <div class="briefcase-scr-width">
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-4.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-5.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-6.jpg" alt="bags">
+                <div class="briefcase-arrow G-align-center">
+                    <div class="briefcase-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                    <div class="briefcase-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                </div>
+                <div class="briefcase-repair-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-4.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-5.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-6.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-6.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-6.jpg" alt="bags">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div class="briefcase-repair-text G-align-center">
                 <div class="briefcase-repair-check">
@@ -778,15 +650,27 @@
         <div class="briefcase-repair-block">
             <h3>Химчистка угг</h3>
             <div class="briefcase-repair-scr">
-                <div class="briefcase-scr-width">
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-7.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-8.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-9.jpg" alt="bags">
+                <div class="briefcase-arrow G-align-center">
+                    <div class="briefcase-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                    <div class="briefcase-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                </div>
+                <div class="briefcase-repair-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-7.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-8.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-9.jpg" alt="bags">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -810,17 +694,30 @@
         <div class="briefcase-repair-block">
             <h3>Реставрация кожаных кедов</h3>
             <div class="briefcase-repair-scr">
-                <div class="briefcase-scr-width">
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-10.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-11.jpg" alt="bags">
-                    </div>
-                    <div class="briefcase-repair-photo G-flex">
-                        <img src="./assets/img/bags-12.jpg" alt="bags">
+                <div class="briefcase-arrow G-align-center">
+                    <div class="briefcase-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                    <div class="briefcase-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                </div>
+                <div class="briefcase-repair-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-10.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-11.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-12.jpg" alt="bags">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div class="briefcase-repair-text G-align-center">
                 <div class="briefcase-repair-check">
@@ -839,6 +736,171 @@
         </div>
     </div>
 </section>
+
+
+
+<section class="price-table-sec">
+    <div class="container">
+        <div class="price-table">
+            <h2>Цены на ремонт сумок</h2>
+            <div class="table-scroll">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Замена ручки на сумке</td>
+                        <td>От 2 300 р.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Замена молнии на сумке (YKK)</td>
+                        <td>1 800 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Замена молнии на сумке (riri)</td>
+                        <td>2 800 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Замена подкладки в сумке</td>
+                        <td>от 2 800 р.</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="cost-by-photo" class="cost-by-photo">
+    <div class="container">
+        <img class="image" src="./assets/img/cost-by-photo-sumki.jpg" alt="sumki">
+        <div class="cost-photo-cnt">
+            <h2>Оценим стоимость<br> по фотографии</h2>
+            <form id="costForm" enctype="multipart/form-data">
+                <p>Прикрепите фотографию и мы свяжемся<br>с Вами в ближайшее время</p>
+
+                <div class="form-group">
+                    <input type="text" name="phone" class="mask-phone form-control phone" placeholder="+7 (___)___-__-__">
+                    <small class="form-text text-error">!Не указан Ваш телефон</small>
+                </div>
+
+                <div class="form-group custom-file2">
+                    <div class="add-foto">Добавить фото изделия</div>
+                    <input type="file" name="photo" class="form-control add-foto-input">
+                    <small class="form-text text-error">!Выберите фото изделия</small>
+                </div>
+                <div class="form-group">
+                    <label class="agreement-text"><input type="checkbox">
+                        Я согласен(-на) с обработкой моих персональных данных в соответствии с политикой конфиденциальности
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-send" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Otsenim stoimost po foto'});">Отправить</button>
+                    <div class="msg"></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="shema" class="how-work-min how-work-bags">
+    <div class="container">
+        <h2>Как мы работаем</h2>
+        <div class="how-work-flex G-justify-between">
+            <div class="how-work-box">
+                <div class="shema-step first">
+                    <span class="step-num">1</span>
+                    <div class="shema-img G-flex">
+                        <img src="./assets/img/icons/deliver-icons.svg" alt="deliver">
+                    </div>
+                    <span class="title-sm">Оставьте заявку</span>
+                    <p>Заполните форму или оставьте свой номер телефона на сайте и мы перезвоним Вам в ближайшее время.</p>
+                </div>
+            </div>
+            <div class="how-work-box">
+                <div class="shema-step ">
+                    <span class="step-num">2</span>
+                    <div class="shema-img G-flex">
+                        <img src="./assets/img/icons/deliver-icons-2.svg" alt="deliver">
+                    </div>
+                    <span class="title-sm">Выберите мастерскую <br> или курьера</span>
+                    <p>Вы можете выбрать ближайший адрес из 7 мастерских или вызвать к вам курьера. </p>
+                </div>
+            </div>
+            <div class="how-work-box">
+                <div class="shema-step ">
+                    <span class="step-num">3</span>
+                    <div class="shema-img G-flex">
+                        <img src="./assets/img/icons/deliver-icons-3.svg" alt="deliver">
+                    </div>
+                    <span class="title-sm">Мы реставрируем вещи</span>
+                    <p>Наши мастера произведут ремонт или необходимые процедуры с Вашими вещами.</p>
+                </div>
+            </div>
+            <div class="how-work-box">
+                <div class="shema-step last">
+                    <span class="step-num">4</span>
+                    <div class="shema-img G-flex">
+                        <img src="./assets/img/icons/deliver-icons-4.svg" alt="deliver">
+
+                    </div>
+                    <span class="title-sm">Выдача или доставка заказа</span>
+                    <p>Выдадим в срок ваш заказ в одном из филиалов или доставим к вам курьером.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="restoration-min">
+    <div class="container">
+        <div class="restoration-info">
+            <h4>Профессиональный ремонт и реставрация
+                брендовых сумок в Москве</h4>
+            <p>
+                Когда на Вашей брендовой сумке, клатче или рюкзаке вдруг обнаруживается царапина, прорывается подкладка, ломается молния или рвётся ручка — это очень неприятно. Но всегда всё можно исправить. Наши мастера устранят повреждения на Вашем любимом аксессуаре. Благодаря их опыту и профессиональному оборудованию ваши вещи будут выглядеть как новые.
+            </p>
+            <div class="restoration-text">
+                <h4>Нас находят
+                    по запросам:</h4>
+                <div class="restoration-ul G-align-start">
+                    <ul>
+                        <li>Реставрация брендовых сумок</li>
+                        <li>Ремонт элитных сумок</li>
+                        <li>Ремонт брендовых сумок</li>
+                    </ul>
+                    <ul>
+                        <li>Ремонт сумок
+                        </li>
+                        <li>Реставрация кожаных сумок</li>
+                    </ul>
+                </div>
+            </div>
+            <p>
+                Компания «Bruno Master» предлагает самый качественный ремонт сумок в Киеве и Украине. Наши специалисты готовы взяться за решение любых задач. Они обладают высоким мастерством и опытом, используют лучшие комплектующие, современное оборудование и инструментарий.
+            </p>
+        </div>
+        <div class="restoration-photo G-flex">
+            <img src="./assets/img/restoration.jpg" alt="restoration">
+        </div>
+    </div>
+</section>
+
+
+
 
 
 
@@ -987,11 +1049,70 @@
 </footer>
 
 
+
+
+
+
+
+<div id="modal-form" class="modal">
+    <div class="modal-content">
+        <div class="modal-request">
+            <div class="close"></div>
+            <form id="orderForm" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h5 class="modal-title">Оставить заявку</h5>
+                    <div class="modal-description">
+                        Отправьте фото повреждения своей обуви или сумки и мастер-технолог Вам перезвонит
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Введите Ваше имя*</label>
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        <small class="form-text text-error">!Не указано Ваше имя</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Укажите Ваш телефон*</label>
+                        <input type="text" name="phone" class="mask-phone form-control phone" placeholder="+7 (___)___-__-__">
+                        <small class="form-text text-error">!Не указан Ваш телефон</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Оставьте комментарий</label>
+                        <textarea name="comment" class="form-control" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="form-group custom-file2" style="position: relative;">
+                        <div class="add-foto">Добавить фото изделия</div>
+                        <input type="file" name="photo" class="form-control add-foto-input">
+                        <small class="form-text text-error">!Выберите фото изделия</small>
+                    </div>
+                    <div class="required-notice">
+                        *Обязательные поля ввода                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn-green" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Ostavit zayavku'});">Отправить</button>
+                    <div class="msg"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="assets/js/jquery.fancybox.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/sliders.js"></script>
 <script src="assets/js/script.js"></script>
+
+<script>
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+</script>
+
 
 
 </body>

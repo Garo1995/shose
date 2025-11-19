@@ -66,7 +66,7 @@ let reviewsSwiper = new Swiper(".reviews-slider", {
         1020: {
             slidesPerView: 3,
             slidesPerGroup: 1,
-            spaceBetween: 30,
+            spaceBetween: 20,
         },
         760: {
             slidesPerView: 2,
@@ -116,3 +116,42 @@ let workshopsSwiper = new Swiper(".workshops-slider", {
         prevEl: '.workshops-button-prev',
     },
 });
+
+
+
+document.querySelectorAll('.briefcase-repair-scr').forEach(wrapper => {
+    const sliderEl = wrapper.querySelector('.briefcase-repair-slider');
+    const slidesCount = sliderEl.querySelectorAll('.swiper-slide').length;
+
+    const benswiper = new Swiper(sliderEl, {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        breakpoints: {
+            1020: { slidesPerView: 3, spaceBetween: 20 },
+            767: { slidesPerView: 3, spaceBetween: 20, loop: true },
+            575: { slidesPerView: 3, spaceBetween: 20, loop: true },
+            320: { slidesPerView: 2, spaceBetween: 20, loop: true },
+        },
+    });
+
+    const nextBtn = wrapper.querySelector('.briefcase-button-next');
+    const prevBtn = wrapper.querySelector('.briefcase-button-prev');
+
+    // === Показ/скрытие кнопок ===
+    if (slidesCount <= 4) {
+        nextBtn.style.display = 'none';
+        prevBtn.style.display = 'none';
+    } else {
+        nextBtn.style.display = 'flex'; // или block, зависит от твоего CSS
+        prevBtn.style.display = 'flex';
+    }
+
+    // === Навигация ===
+    nextBtn.addEventListener('click', () => benswiper.slideNext());
+    prevBtn.addEventListener('click', () => benswiper.slidePrev());
+});
+
+
+
+
+

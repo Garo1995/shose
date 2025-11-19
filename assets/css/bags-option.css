@@ -85,11 +85,31 @@
     font-size: 38px;
     line-height: 120%;
     text-align: left;
+    max-width: 800px;
+    width: 100%;
 }
 .briefcase-repair-scr{
     margin-top: 40px;
-
+    position: relative;
 }
+.briefcase-arrow {
+    gap: 10px;
+    margin-left: auto;
+    position: relative;
+    width: 124px;
+    top: -62px;
+    height: auto;
+}
+.briefcase-arrow .swiper-button-prev{
+    left: 0;
+}
+.briefcase-arrow .swiper-button-next {
+    right: 0;
+}
+.briefcase-repair-scr .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
 .briefcase-scr-width{
     display: flex;
     gap: 20px;
@@ -105,6 +125,7 @@
     padding: 0 20px;
     margin-top: 40px;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .briefcase-repair-check{
     display: flex;
@@ -201,11 +222,8 @@
         margin-top: 28px;
         overflow-x: auto;
         width: 100%;
-        padding-right: 50px;
     }
-    .briefcase-scr-width{
-        width: 880px;
-    }
+
     .briefcase-repair-scr::-webkit-scrollbar {
         width: 0;
         height: 0;
@@ -222,9 +240,7 @@
     }
 }
 @media (max-width: 767px){
-    .briefcase-repair-scr {
-        padding-right: 16px;
-    }
+
     .briefcase-repair-block {
         margin-right: -16px;
     }
@@ -241,6 +257,16 @@
     }
     .bags-option-photo {
         height: 391px;
+    }
+    .briefcase-repair-slider{
+        width: 760px;
+    }
+}
+@media (max-width: 575px){
+
+    .briefcase-repair-block h3 {
+        font-size: 32px;
+        padding-right: 16px;
     }
 
 }
