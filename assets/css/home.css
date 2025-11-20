@@ -1260,4 +1260,18 @@ footer{
     .footer-soc a {
         padding: 11px 24px;
     }
+    .shema-step {
+        padding: 24px 16px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px 20px;
+    }
+    .shema-img {
+        height: 92px;
+        width: 85px;
+    }
+    .shema-step .title-sm {
+        max-width: 191px;
+    }
 }
