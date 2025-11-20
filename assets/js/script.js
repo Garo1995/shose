@@ -9,14 +9,21 @@ $(document).ready(function () {
     })
 
 
-
 });
 
 
-$('.submenu li').on('click', function () {
-    $(this).toggleClass('submenu-opened');
+$('.submenu li').on('click', function (e) {
+    $('.submenu li').removeClass('submenu-opened');
+    $(this).addClass('submenu-opened');
+    e.stopPropagation();
 })
 
+$(window).on('click', function (e) {
+    let menuSort = $('.submenu li');
+    if (e.target !== menuSort) {
+        menuSort.removeClass('submenu-opened');
+    }
+});
 
 
 

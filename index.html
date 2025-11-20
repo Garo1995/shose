@@ -26,6 +26,9 @@
                             <ul class="submenu">
                                 <li><span>Ремонт обуви</span>
                                     <ul class="submenu-pod">
+                                        <li><a href="#">Покраска обуви</a>
+                                        <li><a href="#">Реставрация обуви</a>
+                                        <li><a href="#">Ремонт каблука</a>
                                         <li><a href="#">Замена подошвы</a>
                                         <li><a href="#">Замена набоек</a>
                                         <li><a href="#">Ремонт кроссовок</a>
@@ -125,14 +128,20 @@
             <li class="has-submenu">
                 <a href="#">Услуги</a>
                 <ul class="submenu">
-                    <li><span>Ремонт обуви</span>
+                    <li>
+
+                        <span>Ремонт обуви</span>
                         <ul class="submenu-pod">
+                            <li><a href="#">Покраска обуви</a>
+                            <li><a href="#">Реставрация обуви</a>
+                            <li><a href="#">Ремонт каблука</a>
                             <li><a href="#">Замена подошвы</a>
                             <li><a href="#">Замена набоек</a>
                             <li><a href="#">Ремонт кроссовок</a>
                         </ul>
                     </li>
-                    <li><span>Ремонт сумок</span>
+                    <li>
+                        <span>Ремонт сумок</span>
                         <ul class="submenu-pod">
                             <li><a href="#">Реставрация обуви</a>
                             <li><a href="#">Покраска обуви</a>
@@ -884,6 +893,37 @@
 
 
 
+<div class="modal fade" id="langSelect" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-request">
+                <div class="close"></div>
+
+                <div class="modal-header">
+                    <div class="modal-description">
+                        Будь ласка, оберіть мову інтерфейсу
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-footer">
+                        <div style="">
+                            <a href="ua/index.html" class="btn-green" data-lang="ua">Українська</a>
+                            <a href="index.html" class="btn-green" data-lang="ru">Російська</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="assets/js/jquery.fancybox.js"></script>
 <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
@@ -896,6 +936,8 @@
     $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
     $(".mask-phone").mask("+7 (h99) 999-99-99");
 </script>
+
+
 
 </body>
 </html>

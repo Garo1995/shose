@@ -538,7 +538,22 @@ header .menu .submenu li .submenu-pod li a:hover{
         color: #363636;
     }
     .submenu li:hover .submenu-pod {
-        display: none;
+        display: block;
+    }
+    .submenu li .submenu-pod{
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .submenu .submenu-opened .submenu-pod{
+        height: 198px;
+    }
+    header .menu .submenu .submenu-opened span:after, .header-standart .menu .submenu .submenu-opened span:after {
+        top: 17px;
+        transform: rotate(-45deg);
+    }
+    .mobile-menu {
+        overflow-y: auto;
     }
 }
 @media (max-width: 575px){
