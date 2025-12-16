@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 $('.submenu li').on('click', function (e) {
     $('.submenu li').removeClass('submenu-opened');
-    $(this).addClass('submenu-opened');
+    $(this).toggleClass('submenu-opened');
     e.stopPropagation();
 })
 
@@ -156,3 +156,39 @@ $(window).on('click', function (event) {
 
 
 
+
+
+
+
+
+
+
+$(function () {
+    let Accordion = function (el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+        let links = this.el.find('.link');
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    };
+
+    Accordion.prototype.dropdown = function (e) {
+        let $el = e.data.el;
+        $this = $(this),
+            $next = $this.next();
+        $next.slideToggle();
+        if (!e.data.multiple) {
+
+            $el.find('.submenu-accord').not($next).slideUp();
+        }
+        if (!$this.hasClass('open')) {
+            $('.link').each(function () {
+                $(this).removeClass('open')
+            })
+            $this.addClass('open')
+        } else {
+            $this.removeClass('open')
+        }
+    }
+
+    let accordion = new Accordion($('#accordion'), false);
+});

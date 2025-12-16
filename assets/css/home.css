@@ -783,7 +783,9 @@ footer{
 
 
 
-
+.footer-menu-mobile{
+    display: none;
+}
 
 @media (max-width: 1599px){
     .banner-cnt {
@@ -916,7 +918,7 @@ footer{
     }
     .banner-photo {
         max-width: 83%;
-        margin-top: 123px;
+        height: 100%;
     }
     .banner-cnt {
         padding: 164px 0 156px;
@@ -1121,7 +1123,40 @@ footer{
     .footer-logo-mob{
         display: block;
     }
-
+    .footer-menu{
+        max-width: 327px;
+        width: 100%;
+    }
+    .footer-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        padding-bottom: 16px;
+        width: 100%;
+    }
+    footer .footer-menu-mobile a{
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 120%;
+        color: rgba(115, 115, 115, 1);
+        transition: 0.3s;
+    }
+   footer .footer-menu-mobile a:hover{
+        color: rgba(190, 190, 190, 1);
+    }
+    .footer-soc {
+        gap: 10px;
+        max-width: 326px;
+        width: 100%;
+    }
+    .footer-soc .link-whatsapp{
+        width: 100%;
+    }
+    .footer-soc .link-telegram{
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px){
@@ -1194,9 +1229,7 @@ footer{
     .about-us-sec {
         padding-top: 70px;
     }
-    h2 {
-        font-size: 36px;
-    }
+
     .about-us-info h2 {
         margin-bottom: 24px;
     }
@@ -1274,4 +1307,32 @@ footer{
     .shema-step .title-sm {
         max-width: 191px;
     }
+
+    .brands-photo img {
+        height: 44px;
+        width: auto;
+    }
+    .arrow-slid-btn {
+        gap: 20px;
+    }
+    .review-item {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 30px 25px 50px;
+        min-height: 467px;
+    }
+    .container{
+        padding: 0 12px;
+    }
+    .shema-step {
+        gap: 20px 14px;
+        padding: 24px 16px 60px;
+    }
+    .shema-img {
+        height: auto;
+        width: 82px;
+    }
+
+
+
 }

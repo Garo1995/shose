@@ -153,6 +153,9 @@
     transition: 0.3s;
     white-space: nowrap;
 }
+.btn-green:hover{
+    background: #79b091;
+}
 .btn-white{
     border: 2px solid #88B89D;
     background: #FFFAF4;
