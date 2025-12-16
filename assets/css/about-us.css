@@ -168,7 +168,11 @@
     transition: 0.3s;
     white-space: nowrap;
 }
+.btn-white:hover{
+    background: #88B89D;
+    color: #FFFFFF;
 
+}
 
 @media (max-width: 1020px){
     .services-boxes {
