@@ -941,6 +941,10 @@ footer{
     h4 {
         font-size: 24px;
     }
+    .banner-info h4{
+        font-size: 22px;
+
+    }
     .about-us-flex {
         gap: 24px;
         margin-bottom: 30px;
