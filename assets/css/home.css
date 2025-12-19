@@ -1336,7 +1336,30 @@ footer{
         height: auto;
         width: 82px;
     }
-
-
-
+    .shema-step .title-sm {
+        font-size: 28px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .shema-step {
+        gap: 20px 20px;
+    }
+    .review-item .text {
+        font-size: 17px;
+        line-height: 28px;
+        margin-top: 14px;
+    }
+    .advantages-item .title {
+        font-size: 28px;
+        line-height: 1.4em;
+        padding: 17px 20px 0;
+        min-height: auto;
+    }
+    .shema-step p {
+        line-height: 140%;
+    }
+    h2 {
+        font-size: 48px;
+    }
 }
