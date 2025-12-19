@@ -517,8 +517,10 @@ header .menu .submenu li .submenu-pod li a:hover{
 }
 @media (max-width: 575px){
     .close-menu-mob {
-        top: 55px;
-        right: 20px;
+        width: 35px;
+        height: 35px;
+        top: 39px;
+        right: 25px;
     }
 
 }
