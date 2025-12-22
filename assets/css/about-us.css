@@ -205,7 +205,10 @@
         margin: 30px 0;
     }
     .services-modal .price {
-        font-size: 20px;
+        font-size: 23px;
+    }
+    .services-wrap {
+        margin-top: 19px;
     }
     .services-modal .make-order {
         right: 20px;
@@ -224,8 +227,12 @@
         font-size: 18px;
     }
     .services-modal .title {
+        font-size: 22px;
+        min-height: 49px;
+    }
+    .services-modal .make-order {
         font-size: 20px;
-        min-height: 61px;
+        font-weight: 450;
     }
 }
 @media (max-width: 575px){

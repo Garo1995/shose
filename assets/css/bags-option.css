@@ -232,12 +232,7 @@
         width: 0;
         height: 0;
     }
-    .services-modal .title {
-        font-size: 20px;
-    }
-    .services-modal .price {
-        font-size: 20px;
-    }
+
 }
 @media (max-width: 767px){
 

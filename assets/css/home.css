@@ -1362,4 +1362,13 @@ footer{
     h2 {
         font-size: 48px;
     }
+    .container {
+        max-width: 343px;
+        padding: 0;
+    }
+}
+@media (max-width: 390px){
+/*    .container {
+        max-width: 333px;
+    }*/
 }
