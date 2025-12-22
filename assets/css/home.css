@@ -1368,7 +1368,7 @@ footer{
     }
 }
 @media (max-width: 390px){
-/*    .container {
-        max-width: 333px;
-    }*/
+    .container {
+        max-width: 330px;
+    }
 }
