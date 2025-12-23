@@ -265,12 +265,35 @@ form .add-foto-input {
 
 
 
+.bleaching-flex{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+.bleaching-pic{
+    width: 100%;
 
+}
+.ning-whit{
+    margin: 35px 0 25px;
+}
 
-
-
-
-
+.ning-whit h3{
+    color: #363636;
+    font-size: 40px;
+    text-align: left;
+}
+.bleaching-name{
+    width: 100%;
+}
+.bleaching-name h4{
+    color: #363636;
+    font-size: 24px;
+    text-align: left;
+}
+.bleaching-name p{
+    margin-top: 20px;
+}
 
 
 @media (max-width: 1599px){
