@@ -127,11 +127,21 @@ form .add-foto {
     font-family: 'HelveticaNeueCyr';
     font-size: 17px;
     color: #363636;
-    background: url('../img/add-photo.svg') left center no-repeat;
     height: 72px;
     padding: 23px 0 0 96px;
     font-weight: 400;
     cursor: pointer;
+}
+form .add-foto:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/add-photo.svg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 form .add-foto-input {
     position: absolute;
@@ -161,9 +171,6 @@ form .add-foto-input {
 .advantages-works{
     padding: 50px 0 60px;
 }
-
-
-
 
 .price-page-title p{
     margin-top: 30px;
@@ -237,6 +244,28 @@ form .add-foto-input {
         padding-top: 40px;
         padding-bottom: 40px;
         position: unset;
+    }
+    .modal-content {
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100vh;
+        align-items: flex-start;
+    }
+    .modal-request {
+        border: unset;
+    }
+
+    .modal-request::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: unset;
+
+    }
+    .modal-request::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+        background: unset;
     }
 
 }
@@ -351,6 +380,39 @@ form .add-foto-input {
     .table-scroll table{
         width: 700px;
     }
+    form .add-foto:before {
+        width: 50px;
+        height: 50px;
+    }
+    form input[type=text], form input[type=file] {
+        height: 55px;
+    }
+    form .form-control.phone {
+        font-size: 19px;
+        padding-left: 16px;
+    }
+    form .add-foto {
+        font-size: 17px;
+        height: 54px;
+        padding: 18px 0 0 66px;
+    }
+
+    form textarea{
+        padding-top: 13px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .modal-header {
+        padding: 3rem 0 1rem;
+    }
+
+    .close:before,
+    .close:after{
+        background-color: #363636;
+    }
+    .modal-content {
+        background: #E0D3C5;
+    }
 }
 @media (max-width: 570px){
     .advantages-works {
@@ -359,4 +421,5 @@ form .add-foto-input {
     .our-work-box {
         width: 100%;
     }
+
 }

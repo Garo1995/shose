@@ -56,7 +56,8 @@
                 </div>
                 <div class="header-phone">
                     <a href="tel:+7 (499) 777-45-19" class="phone-number">+7 (499) 777-45-19</a>
-                    <button class="btn-order" data-target="#orderModal">Оставить заявку</button>
+                    <button data-val="modal-form" class="open_modal btn-order" data-target="#orderModal">Оставить заявку</button>
+
                 </div>
                 <div class="open-menu">
                     <span></span>
@@ -285,6 +286,52 @@
         </div>
     </div>
 </footer>
+
+
+<div id="modal-form" class="modal">
+    <div class="modal-content">
+        <div class="modal-request">
+            <div class="close"></div>
+            <form id="orderForm" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h5 class="modal-title">Оставить заявку</h5>
+                    <div class="modal-description">
+                        Отправьте фото повреждения своей обуви или сумки и мастер-технолог Вам перезвонит
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Введите Ваше имя*</label>
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        <small class="form-text text-error">!Не указано Ваше имя</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Укажите Ваш телефон*</label>
+                        <input type="text" name="phone" class="mask-phone form-control phone" placeholder="+7 (___)___-__-__">
+                        <small class="form-text text-error">!Не указан Ваш телефон</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Оставьте комментарий</label>
+                        <textarea name="comment" class="form-control" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="form-group custom-file2" style="position: relative;">
+                        <div class="add-foto">Добавить фото изделия</div>
+                        <input type="file" name="photo" class="form-control add-foto-input">
+                        <small class="form-text text-error">!Выберите фото изделия</small>
+                    </div>
+                    <div class="required-notice">
+                        *Обязательные поля ввода                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn-green" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Ostavit zayavku'});">Отправить</button>
+                    <div class="msg"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 
 
 <script src="assets/js/jquery-3.6.4.js"></script>
