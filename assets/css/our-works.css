@@ -282,7 +282,12 @@ form .add-foto-input {
 .ning-whit{
     margin: 35px 0 25px;
 }
-
+.bleaching-text h3{
+    color: #363636;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 35px;
+}
 .ning-whit h3{
     color: #363636;
     font-size: 40px;
