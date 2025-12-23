@@ -420,6 +420,27 @@ form .add-foto-input {
         height: 58px;
         padding-left: 23px;
     }
+    .bleaching-photo img {
+        height: 290px;
+        object-fit: cover;
+    }
+    .bleaching-text h3 {
+        font-size: 32px;
+        margin-top: 23px;
+    }
+    .bleaching-flex {
+        flex-direction: column;
+    }
+    .bleaching-pic {
+        max-width: 100%;
+    }
+    .ning-whit .workshops-box {
+        margin-top: 28px;
+        flex-direction: column;
+    }
+    .ning-whit .workshops-box:nth-child(even) {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 767px){
@@ -501,5 +522,10 @@ form .add-foto-input {
     .our-work-box {
         width: 100%;
     }
-
+    .bleaching-photo img {
+        height: 234px;
+    }
+    .bleaching-pic img {
+        height: 260px;
+    }
 }
