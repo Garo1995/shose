@@ -272,7 +272,7 @@ form .add-foto-input {
 }
 .bleaching-pic{
     width: 100%;
-
+    max-width: 545px;
 }
 .ning-whit{
     margin: 35px 0 25px;
@@ -285,6 +285,7 @@ form .add-foto-input {
 }
 .bleaching-name{
     width: 100%;
+    max-width: 535px;
 }
 .bleaching-name h4{
     color: #363636;
@@ -295,7 +296,15 @@ form .add-foto-input {
     margin-top: 20px;
 }
 
-
+.ning-whit .workshops-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.ning-whit .workshops-box:nth-child(even){
+    flex-direction: row-reverse;
+}
 @media (max-width: 1599px){
     .cost-by-photo .image {
         left: auto;
