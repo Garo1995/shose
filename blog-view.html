@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+
+<header class="header-all">
+    <div class="header-standart">
+        <div class="container">
+            <div class="header-main G-align-center G-justify-between">
+                <a class="logo" href="index.html">
+                    <img src="assets/img/logo-bruno.svg" alt="logo">
+                </a>
+                <div class="nav-menu">
+                    <ul class="menu">
+                        <li class="has-submenu">
+                            <a href="#">Услуги</a>
+                            <ul class="submenu">
+                                <li><span>Ремонт обуви</span>
+                                    <ul class="submenu-pod">
+                                        <li><a href="#">Покраска обуви</a>
+                                        <li><a href="#">Реставрация обуви</a>
+                                        <li><a href="#">Ремонт каблука</a>
+                                        <li><a href="#">Замена подошвы</a>
+                                        <li><a href="#">Замена набоек</a>
+                                        <li><a href="#">Ремонт кроссовок</a>
+                                    </ul>
+                                </li>
+                                <li><span>Ремонт сумок</span>
+                                    <ul class="submenu-pod">
+                                        <li><a href="#">Реставрация обуви</a>
+                                        <li><a href="#">Покраска обуви</a>
+                                        <li><a href="#">Ремонт каблука</a>
+                                        <li><a href="#">Замена подошвы</a>
+                                        <li><a href="#">Замена набоек</a>
+                                        <li><a href="#">Ремонт кроссовок</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header-phone">
+                    <a href="tel:+7 (499) 777-45-19" class="phone-number">+7 (499) 777-45-19</a>
+                    <button data-val="modal-form" class="open_modal btn-order" data-target="#orderModal">Оставить заявку</button>
+
+                </div>
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="close-menu-mob">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-scr">
+            <div class="menu-mobile">
+                <a href="#">Услуги</a>
+                <div id="accordion" class="accordion">
+                    <div class="accordion-box">
+                        <div class="accordion-click link">
+                            <span>Ремонт обуви</span>
+                        </div>
+                        <div class="submenu-accord">
+                            <div class="submenu-link">
+                                <a href="#">Покраска обуви</a>
+                                <a href="#">Реставрация обуви</a>
+                                <a href="#">Ремонт каблука</a>
+                                <a href="#">Замена подошвы</a>
+                                <a href="#">Замена набоек</a>
+                                <a href="#">Ремонт кроссовок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-box">
+                        <div class="accordion-click link">
+                            <span>Ремонт сумок</span>
+                        </div>
+                        <div class="submenu-accord">
+                            <div class="submenu-link">
+                                <a href="#">Покраска сумок</a>
+                                <a href="#">Реставрация сумок</a>
+                                <a href="#">Ремонт каблука</a>
+                                <a href="#">Замена подошвы</a>
+                                <a href="#">Замена набоек</a>
+                                <a href="#">Ремонт кроссовок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Наши работы</a>
+                <a href="#">О нас</a>
+                <a href="#">Блог</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="mobile-menu-soc">
+                <a href="tel:+7 (499) 777-45-19" class="phone-number">+7 (499) 777-45-19</a>
+                <div class="footer-soc G-align-center">
+                    <a href="" class="link-whatsapp" target="_blank">
+                        <span>WhatsApp</span>
+                        <img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    <a href="" class="link-telegram" target="_blank">
+                        <span>Telegram</span>
+                        <img src="./assets/img/icons/telegram.svg" alt="telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+
+<section class="global-section">
+    <div class="container">
+        <h1>Чистка и отбеливание лоферов Loro Piana</h1>
+
+        <div class="bleaching-photo">
+            <img src="./assets/img/1633956301.png" alt="shose">
+        </div>
+        <div class="bleaching-text">
+            <p>
+                Компания Loro Piana была основана в 1924 году Пьетро Лоро Пиана в Тривенто, Италия. Специализируется на производстве одежды, трикотажа и предметов интерьера из тонкой пряжи. Сегодня семейный бизнес продает товары в 132 магазинах по всему миру.
+
+            </p>
+            <p>
+                Одной из самых популярных позиций компании являются лоферы. Несмотря на свою практичность и универсальность, данная обувь имеет один нюанс - каучуковая подошва со временем начинает желтеть, что явно не добавляет паре свежести. Также многие опасаются покупать обувь из итальянской замши, потому что не знают, как сохранить ее бархатистость и избежать быстрого износа. Стоит сказать, что совершенно напрасно. Ведь сама по себе такая обувь достаточно износостойкая при правильном уходе.
+
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="bleaching-sec">
+    <div class="container">
+        <h2>Компания Loro Piana</h2>
+        <div class="services-wrap G-flex-wrap">
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614682954.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Реставрация кожаной сумки до 40 см</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614681887.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614683034.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Реставрация дорожной сумки (текстиль)</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614681968.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве </div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614681986.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614682012.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614682042.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614682067.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-boxes">
+                <div class="services-modal" data-toggle="modal" data-target="#orderModal">
+                    <div class="image">
+                        <img src="./assets/img/1614682105.jpg" alt="services">
+                    </div>
+                    <div class="text-wrap">
+                        <div class="title">Ремонт сумок Hermes в Москве</div>
+                        <div class="price">От 2 400 р.</div>
+                        <div class="make-order">Заказать</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="company-blog-sec">
+    <div class="container">
+
+        <div class="briefcase-repair-block">
+            <h3>Ремонт кожаного портфеля</h3>
+            <div class="briefcase-repair-scr">
+                <div class="briefcase-arrow G-align-center">
+                    <div class="briefcase-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                    <div class="briefcase-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                </div>
+                <div class="briefcase-repair-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-1.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-2.jpg" alt="bags">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="briefcase-repair-photo G-flex">
+                                <img src="./assets/img/bags-3.jpg" alt="bags">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="bleaching-photo">
+            <img src="./assets/img/1633956301.png" alt="shose">
+        </div>
+        <div class="bleaching-text">
+            <p>
+                Компания Loro Piana была основана в 1924 году Пьетро Лоро Пиана в Тривенто, Италия. Специализируется на производстве одежды, трикотажа и предметов интерьера из тонкой пряжи. Сегодня семейный бизнес продает товары в 132 магазинах по всему миру.
+
+            </p>
+            <p>
+                Одной из самых популярных позиций компании являются лоферы. Несмотря на свою практичность и универсальность, данная обувь имеет один нюанс - каучуковая подошва со временем начинает желтеть, что явно не добавляет паре свежести. Также многие опасаются покупать обувь из итальянской замши, потому что не знают, как сохранить ее бархатистость и избежать быстрого износа. Стоит сказать, что совершенно напрасно. Ведь сама по себе такая обувь достаточно износостойкая при правильном уходе.
+
+            </p>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+<section id="uslugi" class="our-services">
+    <div class="container">
+        <h2>Ремонт брендовых
+            <br>сумок и обуви</h2>
+        <h4>Комплексный подход к восстановлению любимой вещи</h4>
+        <div class="our-services-flex G-align-center">
+            <div class="our-services-box">
+                <h3>Реставрация сумок</h3>
+                <a href="" class="img">
+                    <img src="assets/img/uslugi-sumki-1.png" alt="sumki">
+                </a>
+            </div>
+            <div class="our-services-box">
+                <h3>Реставрация обуви</h3>
+                <a href="" class="img">
+                    <img src="assets/img/uslugi-obuv.png" alt="obuv">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="cost-by-photo" class="cost-by-photo">
+    <div class="container">
+        <img class="image" src="./assets/img/cost-by-photo-obuv.jpg" alt="cost">
+        <div class="cost-photo-cnt">
+            <h2>Оценим стоимость<br> по фотографии</h2>
+            <form id="costForm" enctype="multipart/form-data">
+                <p>Прикрепите фотографию и мы свяжемся<br>с Вами в ближайшее время</p>
+
+                <div class="form-group">
+                    <input type="text" name="phone" class="mask-phone form-control phone" placeholder="+7 (___)___-__-__">
+                    <small class="form-text text-error">!Не указан Ваш телефон</small>
+                </div>
+
+                <div class="form-group custom-file2">
+                    <div class="add-foto">Добавить фото изделия</div>
+                    <input type="file" name="photo" class="form-control add-foto-input">
+                    <small class="form-text text-error">!Выберите фото изделия</small>
+                </div>
+                <div class="form-group">
+                    <label class="agreement-text"><input type="checkbox">
+                        Я согласен(-на) с обработкой моих персональных данных в соответствии с политикой конфиденциальности
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-send" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Otsenim stoimost po foto'});">Отправить</button>
+                    <div class="msg"></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="advantages" class="advantages-works">
+    <div class="container">
+        <h2>Наши преимущества</h2>
+        <div class="advantages-flex G-justify-between">
+            <div class="advantages-box">
+                <div class="advantages-item">
+                    <div class="img"><img src="./assets/img/1614684132.png" alt="advantages"></div>
+                    <div class="title">Профессиональное оборудование</div>
+                    <div class="text">Мы работаем на современном и наиболее технически оснащенном оборудовании.</div>
+                    <div class="num">1</div>
+                </div>
+            </div>
+            <div class="advantages-box">
+                <div class="advantages-item">
+                    <div class="img"><img src="./assets/img/1614684381.png" alt="advantages"></div>
+                    <div class="title">Качественные материалы</div>
+                    <div class="text">Мы используем материалы и комплектующие ведущих европейских производителей.</div>
+                    <div class="num">2</div>
+                </div>
+            </div>
+            <div class="advantages-box">
+                <div class="advantages-item">
+                    <div class="img"><img src="./assets/img/1614684398.png" alt="advantages"></div>
+                    <div class="title">Лучшие мастера</div>
+                    <div class="text">Наши мастера имеют опыт работы в сфере реставрации более 10 лет.</div>
+                    <div class="num">3</div>
+                </div>
+            </div>
+            <div class="advantages-box">
+                <div class="advantages-item">
+                    <div class="img"><img src="./assets/img/1614684422.png" alt="advantages"></div>
+                    <div class="title">7 мастерских по Москве и доставка</div>
+                    <div class="text">Мы открыли 7 мастерских по Москве, а также оказываем услуги доставки Москва и МО.</div>
+                    <div class="num">4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-main G-align-center G-justify-between">
+            <a href="#" class="logo-footer G-flex">
+                <img src="./assets/img/bruno-master.svg" class="footer-logo-desc" alt="bruno">
+                <img src="./assets/img/logo-foot-mob.svg" class="footer-logo-mob" alt="foot">
+            </a>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="footer-menu-mobile">
+                        <a href="#">Ремонт обуви</a>
+                        <a href="#">Ремонт сумок</a>
+                    </li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <a href="tel:+7 (499) 777-45-19" class="tel-number">+7 (499) 777-45-19</a>
+        </div>
+        <div class="footer-cnt G-align-end G-justify-between">
+            <div class="copy-site">
+                <p>Карта сайта</p>
+                <p>© 2025 Bruno Master
+                    <a href="#">Политика конфиденциальности</a>
+                </p>
+            </div>
+            <div class="accept-payments">
+                <p>Принимаем к оплате:</p>
+                <div class="payments-flex G-align-center">
+                    <div class="payments-logo G-flex">
+                        <img src="./assets/img/master.png" alt="master">
+                    </div>
+                    <div class="payments-logo G-flex">
+                        <img src="./assets/img/visa.png" alt="visa">
+                    </div>
+                    <div class="payments-logo G-flex">
+                        <img src="./assets/img/paypalx.png" alt="paypalx">
+                    </div>
+                    <div class="payments-logo G-flex">
+                        <img src="./assets/img/american.png" alt="american">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-soc G-align-center">
+                <a href="" class="link-whatsapp" target="_blank">
+                    <span>WhatsApp</span>
+                    <img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+                </a>
+                <a href="" class="link-telegram" target="_blank">
+                    <span>Telegram</span>
+                    <img src="./assets/img/icons/telegram.svg" alt="telegram">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-form" class="modal">
+    <div class="modal-content">
+        <div class="modal-request">
+            <div class="close"></div>
+            <form id="orderForm" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h5 class="modal-title">Оставить заявку</h5>
+                    <div class="modal-description">
+                        Отправьте фото повреждения своей обуви или сумки и мастер-технолог Вам перезвонит
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Введите Ваше имя*</label>
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        <small class="form-text text-error">!Не указано Ваше имя</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Укажите Ваш телефон*</label>
+                        <input type="text" name="phone" class="mask-phone form-control phone" placeholder="+7 (___)___-__-__">
+                        <small class="form-text text-error">!Не указан Ваш телефон</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Оставьте комментарий</label>
+                        <textarea name="comment" class="form-control" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="form-group custom-file2" style="position: relative;">
+                        <div class="add-foto">Добавить фото изделия</div>
+                        <input type="file" name="photo" class="form-control add-foto-input">
+                        <small class="form-text text-error">!Выберите фото изделия</small>
+                    </div>
+                    <div class="required-notice">
+                        *Обязательные поля ввода                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn-green" onclick="gtag('event', 'Form Submission', {'event_category': 'Form', 'event_action': 'Submission', 'event_label': 'Ostavit zayavku'});">Отправить</button>
+                    <div class="msg"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.6.4.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+</script>
+
+
+
+</body>
+</html>

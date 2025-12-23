@@ -131,6 +131,7 @@ form .add-foto {
     padding: 23px 0 0 96px;
     font-weight: 400;
     cursor: pointer;
+    position: relative;
 }
 form .add-foto:before{
     content: "";
@@ -228,6 +229,43 @@ form .add-foto-input {
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #F0E9E1;
 }
+
+
+
+
+
+.company-blog-sec .bleaching-photo{
+    margin-top: 60px;
+}
+
+
+
+.bleaching-photo{
+    margin-top: 30px;
+    width: 100%;
+}
+.bleaching-photo img{
+    width: 100%;
+}
+
+
+.bleaching-sec{
+    margin-bottom: 100px;
+}
+.company-blog-sec{
+    margin-bottom: 100px;
+}
+
+.bleaching-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+
 
 
 
